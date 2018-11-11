@@ -28,6 +28,7 @@ class CreativeCollab extends React.Component {
               this.firstEditor = instance;
             }}
           />
+          <div className="story-container" dangerouslySetInnerHTML={{ __html: this.state.story }} />
           <TextEditor
             handleChange={() => this.updateStory(this.secondEditor.state.text)}
             ref={(instance) => {
@@ -35,7 +36,6 @@ class CreativeCollab extends React.Component {
             }}
           />
         </div>
-        <div className="story-container" dangerouslySetInnerHTML={{ __html: this.state.story }} />
       </React.Fragment>
     );
   }
