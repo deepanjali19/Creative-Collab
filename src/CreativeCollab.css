@@ -8,6 +8,7 @@
 .story-container {
   border: 1px solid black;
   height: 340px;
-  overflow: scroll;
-  width: 280px;
+  width: 800px;
+  overflow-y: auto;
+  overflow-wrap: break-word;
 }
